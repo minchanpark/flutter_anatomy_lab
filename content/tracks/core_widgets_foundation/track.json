@@ -1,0 +1,21 @@
+{
+  "id": "core_widgets_foundation",
+  "title": "Core 5 Widgets Foundation Track",
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "orderedLessonIds": [
+    "text",
+    "container",
+    "row",
+    "gesture_detector",
+    "list_view"
+  ],
+  "recommendedEntryLessonId": "text",
+  "estimatedMinutes": 55,
+  "learningOutcomes": [
+    "Explain text, box, flex, gesture, and scrolling fundamentals",
+    "Connect Widget, layout, and semantics decisions across lessons",
+    "Use a documentation-style reader to inspect Flutter structure instead of memorizing isolated API calls"
+  ],
+  "lastReviewedAt": "2026-03-10"
+}

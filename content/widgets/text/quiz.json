@@ -1,0 +1,41 @@
+{
+  "lessonId": "text",
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "text_q1",
+      "type": "multiple_choice",
+      "prompt": "Which object provides inherited fallback text styling when `Text.style` leaves values null?",
+      "choices": ["DefaultTextStyle", "Container", "Row"],
+      "answer": "DefaultTextStyle",
+      "relatedSectionIds": ["overview"],
+      "explanation": "DefaultTextStyle carries inherited text styling and fills in values that local TextStyle does not specify."
+    },
+    {
+      "id": "text_q2",
+      "type": "ox",
+      "prompt": "Overflow behavior only becomes interesting after width constraints are limited.",
+      "choices": ["O", "X"],
+      "answer": "O",
+      "relatedSectionIds": ["runtime"],
+      "explanation": "A paragraph needs layout constraints before wrapping, clipping, or ellipsis decisions appear."
+    },
+    {
+      "id": "text_q3",
+      "type": "priority_order",
+      "prompt": "Arrange the learning focus from visible output to deeper structure.",
+      "choices": [
+        "Visible text on screen",
+        "Style and inherited defaults",
+        "Constraints and semantics"
+      ],
+      "answer": [
+        "Visible text on screen",
+        "Style and inherited defaults",
+        "Constraints and semantics"
+      ],
+      "relatedSectionIds": ["quiz"],
+      "explanation": "The lesson starts with what you see, then explains style resolution, then ties text back to layout width and accessibility meaning."
+    }
+  ]
+}

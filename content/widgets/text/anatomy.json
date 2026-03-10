@@ -1,0 +1,81 @@
+{
+  "lessonId": "text",
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "text",
+      "kind": "widget",
+      "title": "Text",
+      "summary": "Widget-level description of a paragraph of text.",
+      "relatedSectionIds": ["overview", "api", "anatomy"],
+      "sourceRefIds": ["api:text"]
+    },
+    {
+      "id": "text_style",
+      "kind": "style_model",
+      "title": "TextStyle",
+      "summary": "Local visual description such as size, weight, and color.",
+      "relatedSectionIds": ["api", "anatomy"],
+      "sourceRefIds": ["api:text_style"]
+    },
+    {
+      "id": "default_text_style",
+      "kind": "inherited_context",
+      "title": "DefaultTextStyle",
+      "summary": "Inherited style context that fills in missing text style values.",
+      "relatedSectionIds": ["anatomy", "runtime"],
+      "sourceRefIds": ["api:default_text_style"]
+    },
+    {
+      "id": "overflow",
+      "kind": "layout_behavior",
+      "title": "Overflow",
+      "summary": "Wrapping, clipping, and ellipsis only matter once width constraints become tight.",
+      "relatedSectionIds": ["api", "runtime", "anatomy"],
+      "sourceRefIds": ["api:text"]
+    },
+    {
+      "id": "semantics",
+      "kind": "accessibility",
+      "title": "Semantics label",
+      "summary": "Accessible text can intentionally differ from the visible string.",
+      "relatedSectionIds": ["semantics", "overview"],
+      "sourceRefIds": ["docs:accessibility"]
+    },
+    {
+      "id": "width_constraints",
+      "kind": "shared_concept",
+      "title": "Width constraints",
+      "summary": "Shared concept with Container and Row: available width changes wrapping and overflow.",
+      "relatedSectionIds": ["runtime", "anatomy"],
+      "sourceRefIds": ["api:text"]
+    }
+  ],
+  "edges": [
+    {
+      "from": "text",
+      "to": "text_style",
+      "relationship": "uses"
+    },
+    {
+      "from": "text",
+      "to": "default_text_style",
+      "relationship": "inherits_from"
+    },
+    {
+      "from": "text",
+      "to": "overflow",
+      "relationship": "responds_with"
+    },
+    {
+      "from": "overflow",
+      "to": "width_constraints",
+      "relationship": "depends_on"
+    },
+    {
+      "from": "text",
+      "to": "semantics",
+      "relationship": "exposes"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "__TRACK_ID__",
+  "title": "TODO: track title",
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "orderedLessonIds": [],
+  "recommendedEntryLessonId": "",
+  "estimatedMinutes": 0,
+  "learningOutcomes": [],
+  "lastReviewedAt": "__TODAY__"
+}

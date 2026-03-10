@@ -1,0 +1,33 @@
+{
+  "lessonId": "__LESSON_ID__",
+  "schemaVersion": 1,
+  "questions": [
+    {
+      "id": "__LESSON_ID___q1",
+      "type": "multiple_choice",
+      "prompt": "TODO: first checkpoint question",
+      "choices": ["TODO A", "TODO B", "TODO C"],
+      "answer": "TODO A",
+      "relatedSectionIds": ["overview"],
+      "explanation": "TODO: explain the correct answer"
+    },
+    {
+      "id": "__LESSON_ID___q2",
+      "type": "ox",
+      "prompt": "TODO: second checkpoint question",
+      "choices": ["O", "X"],
+      "answer": "O",
+      "relatedSectionIds": ["runtime"],
+      "explanation": "TODO: explain the correct answer"
+    },
+    {
+      "id": "__LESSON_ID___q3",
+      "type": "priority_order",
+      "prompt": "TODO: third checkpoint question",
+      "choices": ["TODO 1", "TODO 2", "TODO 3"],
+      "answer": ["TODO 1", "TODO 2", "TODO 3"],
+      "relatedSectionIds": ["quiz"],
+      "explanation": "TODO: explain the ordering"
+    }
+  ]
+}

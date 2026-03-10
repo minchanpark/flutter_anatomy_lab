@@ -1,0 +1,59 @@
+---
+id: __LESSON_ID__
+kind: widget
+title: __TITLE__
+library: widgets
+difficulty: foundation
+trackIds:
+  - __TRACK_ID__
+orderInTrack: __ORDER_IN_TRACK__
+isCoreTrackLesson: true
+recommendedNext: []
+conceptCoverage: []
+sourceRefs: []
+contentVersion: 1
+schemaVersion: 1
+flutterVersion: "3.41.x"
+lastReviewedAt: __TODAY__
+sections:
+  - overview
+  - api
+  - anatomy
+  - source
+  - playground
+  - runtime
+  - semantics
+  - quiz
+---
+
+# Overview
+
+TODO: Explain what `__TITLE__` is, when it should be used, and what the learner should notice first.
+
+# API
+
+TODO: Summarize the public API and the properties that matter for this lesson.
+
+# Anatomy
+
+TODO: Explain the core nodes and how they connect to other lessons or framework concepts.
+
+# Source
+
+TODO: Add short source excerpts, canonical links, and review metadata.
+
+# Playground
+
+TODO: Define the allowed controls and what structural behavior they reveal.
+
+# Runtime
+
+TODO: Describe the Widget, Element, RenderObject, layout, and paint implications.
+
+# Semantics
+
+TODO: Describe accessibility behavior, labels, roles, and keyboard interactions.
+
+# Quiz
+
+TODO: Add checkpoint prompts that map back to the sections above.

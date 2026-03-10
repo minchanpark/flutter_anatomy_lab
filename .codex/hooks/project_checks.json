@@ -1,0 +1,17 @@
+{
+  "timeoutSec": 900,
+  "commands": [
+    {
+      "name": "flutter analyze",
+      "argv": ["flutter", "analyze"],
+      "workdir": ".",
+      "requires": ["pubspec.yaml"]
+    },
+    {
+      "name": "flutter test",
+      "argv": ["flutter", "test"],
+      "workdir": ".",
+      "requires": ["pubspec.yaml"]
+    }
+  ]
+}

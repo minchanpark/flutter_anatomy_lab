@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flutter Anatomy Builder"
+  short_description: "Build Flutter Anatomy Lab app features"
+  default_prompt: "Use $flutter-anatomy-builder to implement or refactor Flutter Anatomy Lab app features in this repository."

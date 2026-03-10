@@ -1,0 +1,29 @@
+{
+  "lessonId": "__LESSON_ID__",
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "id": "__LESSON_ID__",
+      "kind": "widget",
+      "title": "__TITLE__",
+      "summary": "TODO: lesson root node summary",
+      "relatedSectionIds": ["overview", "api", "anatomy"],
+      "sourceRefIds": []
+    },
+    {
+      "id": "__LESSON_ID___concept",
+      "kind": "concept",
+      "title": "TODO: primary concept",
+      "summary": "TODO: concept summary",
+      "relatedSectionIds": ["anatomy", "runtime"],
+      "sourceRefIds": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "__LESSON_ID__",
+      "to": "__LESSON_ID___concept",
+      "relationship": "uses"
+    }
+  ]
+}

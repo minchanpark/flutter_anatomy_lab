@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flutter Anatomy Content"
+  short_description: "Author Flutter Anatomy lesson content"
+  default_prompt: "Use $flutter-anatomy-content to add or revise lesson, track, anatomy, and quiz content for Flutter Anatomy Lab."

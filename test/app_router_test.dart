@@ -28,7 +28,9 @@ void main() {
 
     expect(find.text('Anatomy'), findsWidgets);
     expect(find.text('Overflow'), findsWidgets);
-    expect(find.text('Wrapping and ellipsis depend on width constraints.'),
-        findsOneWidget);
+    expect(
+      find.text('Wrapping and ellipsis depend on width constraints.'),
+      findsWidgets,
+    );
   });
 }

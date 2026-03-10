@@ -165,33 +165,36 @@ class _DocsTopBar extends StatelessWidget {
       height: 68,
       color: theme.colorScheme.surface,
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Row(
-        children: [
-          InkWell(
-            onTap: () => context.go('/tracks/core_widgets_foundation'),
-            borderRadius: BorderRadius.circular(12),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-              child: Text(
-                'Flutter Anatomy Lab',
-                style: theme.textTheme.titleLarge,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            InkWell(
+              onTap: () => context.go('/tracks/core_widgets_foundation'),
+              borderRadius: BorderRadius.circular(12),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                child: Text(
+                  'Flutter Anatomy Lab',
+                  style: theme.textTheme.titleLarge,
+                ),
               ),
             ),
-          ),
-          const Spacer(),
-          TextButton(
-            onPressed: () => context.go('/tracks/core_widgets_foundation'),
-            child: const Text('Track'),
-          ),
-          TextButton(
-            onPressed: () => context.go('/widgets/text'),
-            child: const Text('Text'),
-          ),
-          TextButton(
-            onPressed: () => context.go('/settings'),
-            child: const Text('Settings'),
-          ),
-        ],
+            const SizedBox(width: 24),
+            TextButton(
+              onPressed: () => context.go('/tracks/core_widgets_foundation'),
+              child: const Text('Track'),
+            ),
+            TextButton(
+              onPressed: () => context.go('/widgets/text'),
+              child: const Text('Text'),
+            ),
+            TextButton(
+              onPressed: () => context.go('/settings'),
+              child: const Text('Settings'),
+            ),
+          ],
+        ),
       ),
     );
   }

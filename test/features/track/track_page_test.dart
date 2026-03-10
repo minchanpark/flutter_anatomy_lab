@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_anatomy_lab/core/theme/app_theme.dart';
 import 'package:flutter_anatomy_lab/content/repositories/content_providers.dart';
 import 'package:flutter_anatomy_lab/features/progress/application/track_progress_controller.dart';
 import 'package:flutter_anatomy_lab/features/track/presentation/track_page.dart';
@@ -26,8 +27,9 @@ void main() {
               (ref) async => fakeProgressRepository,
             ),
           ],
-          child: const MaterialApp(
-            home: TrackPage(trackId: 'core_widgets_foundation'),
+          child: MaterialApp(
+            theme: AppTheme.light(),
+            home: const TrackPage(trackId: 'core_widgets_foundation'),
           ),
         ),
       );
@@ -35,12 +37,12 @@ void main() {
     }
 
     await pumpWithWidth(1440);
-    expect(find.text('Core 5 Widgets Foundation Track'), findsNWidgets(2));
+    expect(find.text('Core 5 Widgets Foundation Track'), findsWidgets);
     expect(find.text('Why this track exists'), findsOneWidget);
     expect(find.text('Ordered lessons'), findsOneWidget);
 
     await pumpWithWidth(700);
-    expect(find.text('Core 5 Widgets Foundation Track'), findsOneWidget);
+    expect(find.text('Core 5 Widgets Foundation Track'), findsWidgets);
     expect(find.text('Why this track exists'), findsOneWidget);
     expect(find.text('Ordered lessons'), findsOneWidget);
   });

@@ -175,8 +175,21 @@ class AppThemeTokens extends ThemeExtension<AppThemeTokens> {
   final Color warning;
   final Color danger;
 
+  static const AppThemeTokens fallback = AppThemeTokens(
+    background: Color(0xFFF5F7FB),
+    surface: Color(0xFFFFFFFF),
+    surfaceSubtle: Color(0xFFF0F4FA),
+    border: Color(0xFFD9E2EF),
+    accent: Color(0xFF1C5ED6),
+    textPrimary: Color(0xFF162033),
+    textSecondary: Color(0xFF5B677B),
+    success: Color(0xFF18794E),
+    warning: Color(0xFF9A6700),
+    danger: Color(0xFFB42318),
+  );
+
   static AppThemeTokens of(BuildContext context) {
-    return Theme.of(context).extension<AppThemeTokens>()!;
+    return Theme.of(context).extension<AppThemeTokens>() ?? fallback;
   }
 
   @override
